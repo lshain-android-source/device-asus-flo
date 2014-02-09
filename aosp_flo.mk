@@ -17,18 +17,21 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 PRODUCT_NAME := aosp_flo
 PRODUCT_DEVICE := flo
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on Flo
+PRODUCT_MODEL := AOSP on Flo with Lshain
 PRODUCT_MANUFACTURER := ASUS
 PRODUCT_RESTRICT_VENDOR_FILES := true
+
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/asus/flo/device.mk)
 $(call inherit-product-if-exists, vendor/asus/flo/device-vendor.mk)
 #$(call inherit-product-if-exists, vendor/qcom/proprietary/common/config/device-vendor.mk)
+
+$(call inherit-product-if-exists, device/asus/flo/flo.mk)
+

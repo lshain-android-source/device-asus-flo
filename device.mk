@@ -33,10 +33,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc_nci.flo
 
-# abc
-PRODUCT_PACKAGES += \
-    abc
-
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/flo/device-common.mk)
 
@@ -44,3 +40,4 @@ $(call inherit-product, device/asus/flo/device-common.mk)
 $(call inherit-product-if-exists, vendor/asus/flo/device-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS := device/asus/flo/overlay
+

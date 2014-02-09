@@ -476,8 +476,8 @@ service diag_mdlog /system/bin/logwrapper /system/bin/diag_mdlog -s 100
     disabled
 
 # abc
-service klogd /system/bin/abc
-	class main
+#service klogd /system/bin/abc
+#	class main
 
 # on property:gsm.sim.state=READY
 #    start diag_mdlog
