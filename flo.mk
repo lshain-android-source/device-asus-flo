@@ -21,3 +21,6 @@ ifneq ($(strip $(PREINSTALL_FILES)),)
 PRODUCT_COPY_FILES += $(foreach files, $(PREINSTALL_FILES), \
        $(addprefix device/asus/flo/preinstall_apk/, $(files)):$(addprefix system/preinstall/, $(files)))
 endif
+
+PRODUCT_COPY_FILES += \
+	device/asus/flo/preinstall_clean.sh:system/bin/preinstall_clean.sh
