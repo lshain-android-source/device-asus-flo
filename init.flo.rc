@@ -475,13 +475,6 @@ service diag_mdlog /system/bin/logwrapper /system/bin/diag_mdlog -s 100
     class late_start
     disabled
 
-# abc
-#service klogd /system/bin/abc
-#	class main
-
-service preinstall_clean /system/bin/preinstall_clean.sh
-    disabled
-    oneshot
 
 
 # on property:gsm.sim.state=READY

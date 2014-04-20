@@ -40,4 +40,3 @@ $(call inherit-product, device/asus/flo/device-common.mk)
 $(call inherit-product-if-exists, vendor/asus/flo/device-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS := device/asus/flo/overlay
-
