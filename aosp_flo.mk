@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 PRODUCT_NAME := aosp_flo
 PRODUCT_DEVICE := flo
 PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on Flo
+PRODUCT_MODEL := AOSP on Flo with Lshain
 PRODUCT_MANUFACTURER := ASUS
 PRODUCT_RESTRICT_VENDOR_FILES := true
 
@@ -32,3 +32,5 @@ PRODUCT_RESTRICT_VENDOR_FILES := true
 $(call inherit-product, device/asus/flo/device.mk)
 $(call inherit-product-if-exists, vendor/asus/flo/device-vendor.mk)
 #$(call inherit-product-if-exists, vendor/qcom/proprietary/common/config/device-vendor.mk)
+
+$(call inherit-product-if-exists, device/asus/flo/flo.mk)
