@@ -3,6 +3,10 @@
 PRODUCT_PACKAGES += \
     abc
 
+# freg
+PRODUCT_PACKAGES += \
+	freg.default
+
 # build version
 BUILD_NUMBER := T1.00
 
